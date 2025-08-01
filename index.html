@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nambercay Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vujahday+Script">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar_left">
+            <img class="avatar" src="./images/avatar.webp" alt="Avatar của Shop">
+            <h1>Nambercay Shop</h1>
+        </div>
+        <div class="logo">
+            <img src="./images/logo.webp" alt="Logo của Shop">
+        </div>
+        <div class="navbar_right">
+            <a class="fb" title="Facebook" href="https://www.facebook.com/profile.php?id=61569460834635" target="_blank"
+                rel="noopener">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="tiktok" title="Tiktok" href="https://www.tiktok.com/@nambercay" target="_blank" rel="noopener">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a class="ig" title="Instagram" href="https://www.instagram.com/nambercay/" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a id="more" class="more" title="Giới thiệu về Shop">
+                <i class="fas fa-circle-info"></i>
+            </a>
+            <a id="bars_icon" class="bars_icon" title="Danh mục">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <p>Phân loại</p>
+        <div class="line"></div>
+        <button class="tab active" data-target="reu">1. Rêu bảo tồn</button>
+        <button class="tab second" data-target="lapphuong">2. Bể lập phương</button>
+        <button class="tab" data-target="dagiac">3. Bể đa giác *</button>
+        <button class="tab" data-target="bancan">4. Bể bán cạn</button>
+        <button class="tab" data-target="khac">5. Khác...</button>
+    </div>
+    <div class="container">
+        <div id="more_box_popup">
+            <div class="more_box">
+                <div class="more_box-header">
+                    <p class="bold">🌿 Nambercay – nghệ thuật của thiên nhiên thu nhỏ 🌿</p>
+                    <div id="close_btn">X</div>
+                </div>
+                <p><span class="italic">Terrarium</span> là những hệ sinh thái thu nhỏ trong lọ kính, nơi rêu, cây cối và
+                    đất đá cùng nhau tạo nên một thế giới sống động, xanh mát và tràn đầy năng lượng.</p>
+                <p>Không chỉ là vật trang trí, <span class="italic">Terrarium</span> còn mang ý nghĩa sâu sắc về sự tái
+                    sinh, cân bằng và kết nối với thiên nhiên – thứ mà chúng ta đang dần lãng quên trong nhịp sống hiện đại.
+                </p>
+                <p>🔸 Bể rêu bảo tồn - <span class="bold">lưu giữ vẻ đẹp nguyên sinh</span></p>
+                <p>🔸 Bể lập phương – <span class="bold">tối giản nhưng tinh tế</span></p>
+                <p>🔸 Bể đa giác – <span class="bold">phá cách và hiện đại</span></p>
+                <p>🔸 Bể bán cạn – <span class="bold">kết hợp hài hòa giữa đất / nước</span></p>
+                <p>🔸 Và còn nhiều kiểu dáng sáng tạo khác, phù hợp với mọi không gian và phong cách sống.</p>
+                <p>📌 Nhận làm theo yêu cầu: Dù bạn có một ý tưởng độc lạ, một hình mẫu yêu thích hay chỉ đơn giản là một
+                    mong muốn mang thiên nhiên vào góc nhỏ của mình - hãy để chúng tôi biến điều đó thành hiện thực.</p>
+                <p>📦 Ship toàn quốc • Bảo hành kỹ thuật • Hỗ trợ setup & nuôi dưỡng</p>
+                <p>📩 Liên hệ để tạo nên một hệ sinh thái của riêng bạn.</p>
+            </div>
+        </div>
+        <div id="bars_wrapper">
+            <div class="bars_popup">
+                <button class="bar active" data-target="reu">Rêu bảo tồn</button>
+                <button class="bar" data-target="lapphuong">Bể lập phương</button>
+                <button class="bar" data-target="dagiac">Bể đa giác</button>
+                <button class="bar" data-target="bancan">Bể bán cạn</button>
+                <button class="bar" data-target="khac">Bể khác</button>
+            </div>
+        </div>
+    </div>
+    <div class="section_wrapper">
+        <div id="reu" class="section active">
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">                    <img class="preview_img" src="./images/reu1.webp" alt="Bể rêu bảo tồn 1">
+                <p class="img_des">Rêu bảo tồn #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu2.webp" alt="Bể rêu bảo tồn 2">
+                <p class="img_des">Rêu bảo tồn #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu3.webp" alt="Bể rêu bảo tồn 3">
+                <p class="img_des">Rêu bảo tồn #3</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu4.webp" alt="Bể rêu bảo tồn 4">
+                <p class="img_des">Rêu bảo tồn #4</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu5.webp" alt="Bể rêu bảo tồn 5">
+                <p class="img_des">Rêu bảo tồn #5</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu6.webp" alt="Bể rêu bảo tồn 6">
+                <p class="img_des">Rêu bảo tồn #6</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu7.webp" alt="Bể rêu bảo tồn 7">
+                <p class="img_des">Rêu bảo tồn #7</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu8.webp" alt="Bể rêu bảo tồn 8">
+                <p class="img_des">Rêu bảo tồn #8</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/reu9.webp" alt="Bể rêu bảo tồn 9">
+                <p class="img_des">Rêu bảo tồn #9</p>
+            </div>
+        </div>
+        <div id="lapphuong" class="section">
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong1.webp" alt="Bể lập phương 1">
+                <p class="img_des">Lập phương #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong2.webp" alt="Bể lập phương 2">
+                <p class="img_des">Lập phương #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong3.webp" alt="Bể lập phương 3">
+                <p class="img_des">Lập phương #3</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong4.webp" alt="Bể lập phương 3">
+                <p class="img_des">Lập phương #4</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong5.webp" alt="Bể lập phương 5">
+                <p class="img_des">Lập phương #5</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong6.webp" alt="Bể lập phương 6">
+                <p class="img_des">Lập phương #6</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong7.webp" alt="Bể lập phương 7">
+                <p class="img_des">Lập phương #7</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong8.webp" alt="Bể lập phương 8">
+                <p class="img_des">Lập phương #8</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong9.webp" alt="Bể lập phương 9">
+                <p class="img_des">Lập phương #9</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/lapphuong10.webp" alt="Bể lập phương 10">
+                <p class="img_des">Lập phương #10</p>
+            </div>
+        </div>
+        <div id="dagiac" class="section">
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac1.webp" alt="Bể đa giác 1">
+                <p class="img_des">Đa giác #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac2.webp" alt="Bể đa giác 2">
+                <p class="img_des">Đa giác #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac3.webp" alt="Bể đa giác 3">
+                <p class="img_des">Đa giác #3</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac4.webp" alt="Bể đa giác 4">
+                <p class="img_des">Đa giác #4</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac5.webp" alt="Bể đa giác 5">
+                <p class="img_des">Đa giác #5</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac6.webp" alt="Bể đa giác 6">
+                <p class="img_des">Đa giác #6</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac7.webp" alt="Bể đa giác 7">
+                <p class="img_des">Đa giác #7</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac8.webp" alt="Bể đa giác 8">
+                <p class="img_des">Đa giác #8</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac9.webp" alt="Bể đa giác 9">
+                <p class="img_des">Đa giác #9</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac10.webp" alt="Bể đa giác 10">
+                <p class="img_des">Đa giác #10</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac11.webp" alt="Bể đa giác 11">
+                <p class="img_des">Đa giác #11</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac12.webp" alt="Bể đa giác 12">
+                <p class="img_des">Đa giác #12</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac13.webp" alt="Bể đa giác 13">
+                <p class="img_des">Đa giác #13</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac14.webp" alt="Bể đa giác 14">
+                <p class="img_des">Đa giác #14</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac15.webp" alt="Bể đa giác 15">
+                <p class="img_des">Đa giác #15</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac16.webp" alt="Bể đa giác 16">
+                <p class="img_des">Đa giác #16</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac17.webp" alt="Bể đa giác 17">
+                <p class="img_des">Đa giác #17</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac18.webp" alt="Bể đa giác 18">
+                <p class="img_des">Đa giác #18</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/dagiac19.webp" alt="Bể đa giác 19">
+                <p class="img_des">Đa giác #19</p>
+            </div>
+        </div>
+        <div id="bancan" class="section">
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan1.webp" alt="Bể bán cạn 1">
+                <p class="img_des">Bán cạn #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan2.webp" alt="Bể bán cạn 2">
+                <p class="img_des">Bán cạn #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan3.webp" alt="Bể bán cạn 3">
+                <p class="img_des">Bán cạn #3</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan4.webp" alt="Bể bán cạn 4">
+                <p class="img_des">Bán cạn #4</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan5.webp" alt="Bể bán cạn 5">
+                <p class="img_des">Bán cạn #5</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan6.webp" alt="Bể bán cạn 6">
+                <p class="img_des">Bán cạn #6</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/bancan7.webp" alt="Bể bán cạn 7">
+                <p class="img_des">Bán cạn #7</p>
+            </div>
+        </div>
+        <div id="khac" class="section">
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac1.webp" alt="Bể khác 1">
+                <p class="img_des">Bể tròn #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac2.webp" alt="Bể khác 2">
+                <p class="img_des">Bể tròn #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac3.webp" alt="Bể khác 3">
+                <p class="img_des">Bể tròn #3</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac4.webp" alt="Bể khác 4">
+                <p class="img_des">Tranh rêu #1</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac5.webp" alt="Bể khác 5">
+                <p class="img_des">Tranh rêu #2</p>
+            </div>
+            <div class="overlay">
+                <img class="img_frame" src="./images/frame.webp" alt="Khung ảnh">
+                <img class="preview_img" src="./images/khac6.webp" alt="Bể khác 6">
+                <p class="img_des">Tranh rêu #3</p>
+            </div>
+        </div>
+    </div>
+    <div id="zoom_img">
+        <div class="zoom_box" data-index="0">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu1-og.webp" alt="Rêu bảo tồn 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="1">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu2-og.webp" alt="Rêu bảo tồn 2">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="2">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu3-og.webp" alt="Rêu bảo tồn 3 góc 1">
+            <img src="./images/reu3-og1.webp" alt="Rêu bảo tồn 3 góc 2" style="display: none">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="3">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu4-og.webp" alt="Rêu bảo tồn 4 góc 1">
+            <img src="./images/reu4-og1.webp" alt="Rêu bảo tồn 4 góc 2" style="display: none">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="4">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu5-og.webp" alt="Rêu bảo tồn 5 góc 1">
+            <img src="./images/reu5-og1.webp" alt="Rêu bảo tồn 5 góc 2" style="display: none">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="5">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu6-og.webp" alt="Rêu bảo tồn 6 góc 1">
+            <img src="./images/reu6-og1.webp" alt="Rêu bảo tồn 6 góc 2" style="display: none">
+            <img src="./images/reu6-og2.webp" alt="Rêu bảo tồn 6 góc 3" style="display: none">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="6">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu7-og.webp" alt="Rêu bảo tồn 7">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="7">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu8-og.webp" alt="Rêu bảo tồn 8 góc 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="8">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/reu9-og.webp" alt="Rêu bảo tồn 9">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="9">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong1-og.webp" alt="Lập phương 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="10">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong2-og.webp" alt="Lập phương 2">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="11">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong3-og.webp" alt="Lập phương 3">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="12">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong4-og.webp" alt="Lập phương 4">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="13">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong5-og.webp" alt="Lập phương 5">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="14">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong6-og.webp" alt="Lập phương 6">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="15">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong7-og.webp" alt="Lập phương 7">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="16">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong8-og.webp" alt="Lập phương 8">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="17">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong9-og.webp" alt="Lập phương 9">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="18">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/lapphuong10-og.webp" alt="Lập phương 10">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="19">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac1-og.webp" alt="Đa giác 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="20">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac2-og.webp" alt="Đa giác 2">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="21">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac3-og.webp" alt="Đa giác 3">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="22">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac4-og.webp" alt="Đa giác 4">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="23">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac5-og.webp" alt="Đa giác 5">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="24">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac6-og.webp" alt="Đa giác 6">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="25">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac7-og.webp" alt="Đa giác 7">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="26">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac8-og.webp" alt="Đa giác 8">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="27">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac9-og.webp" alt="Đa giác 9">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="28">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac10-og.webp" alt="Đa giác 10">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="29">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac11-og.webp" alt="Đa giác 11">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="30">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac12-og.webp" alt="Đa giác 12">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="31">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac13-og.webp" alt="Đa giác 13">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="32">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac14-og.webp" alt="Đa giác 14">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="33">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac15-og.webp" alt="Đa giác 15">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="34">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac16-og.webp" alt="Đa giác 16">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="35">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac17-og.webp" alt="Đa giác 17">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="36">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac18-og.webp" alt="Đa giác 18">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="37">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/dagiac19-og.webp" alt="Đa giác 19">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="38">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan1-og.webp" alt="Bán cạn 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="39">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan2-og.webp" alt="Bán cạn 2">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="40">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan3-og.webp" alt="Bán cạn 3">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="41">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan4-og.webp" alt="Bán cạn 4">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="42">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan5-og.webp" alt="Bán cạn 5">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="43">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan6-og.webp" alt="Bán cạn 6">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="44">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/bancan7-og.webp" alt="Bán cạn 7">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="45">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac1-og.webp" alt="Khác 1">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="46">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac2-og.webp" alt="Khác 2">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="47">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac3-og.webp" alt="Khác 3">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="48">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac4-og.webp" alt="Khác 4">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="49">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac5-og.webp" alt="Khác 5">
+            <div class="next_arrow">→</div>
+        </div>
+        <div class="zoom_box" data-index="50">
+            <div id="close_btn_zoom">X</div>
+            <img src="./images/khac6-og.webp" alt="Khác 6">
+            <div class="next_arrow">→</div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
