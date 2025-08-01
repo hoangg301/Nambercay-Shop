@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hoangg301.github.io/Nambercay-Shop/sitemap.xml
