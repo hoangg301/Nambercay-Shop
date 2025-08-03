@@ -31,7 +31,7 @@ function closeAllZoomBoxes() {
 overlays.forEach((overlay, index) => {
     overlay.addEventListener("click", () => {
         closeAllZoomBoxes();
-        zoomPopup.style.display = "block";
+        zoomPopup.style.display = "flex";
         zoomBoxes[index].style.display = "flex";
         document.body.style.overflow = "hidden";
     });
